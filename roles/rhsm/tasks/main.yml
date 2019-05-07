@@ -1,0 +1,8 @@
+---
+# tasks file for rhsm
+- name: Register as user and auto-subscribe to available content
+  redhat_subscription:
+    state: present
+    username: your-rhn-user
+    password: "your-rhn-pass"
+    auto_attach: true

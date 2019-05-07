@@ -1,0 +1,19 @@
+---
+- name: Install demo
+  hosts: all
+  become: yes
+  tasks:
+  - include_role:
+      name: rhsm
+  - include_role:
+      name: cockpit
+  - include_role:
+      name: boom-boot
+  - include_role:
+      name: firewalld
+  - include_role:
+      name: session_recording
+  - include_role:
+      name: stratis
+  - include_role:
+      name: composer

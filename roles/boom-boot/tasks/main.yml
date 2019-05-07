@@ -1,0 +1,6 @@
+---
+# tasks file for boom-boot
+- name: Install boom boot
+  yum:
+    name: boom-boot
+    state: present

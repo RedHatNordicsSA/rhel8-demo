@@ -1,0 +1,12 @@
+---
+# tasks file for cockpit
+- name: Install cockpit
+  yum:
+    name: cockpit-ws, cockpit-session-recording, cockpit-system, cockpit-dashboard, cockpit-composer
+    state: present
+
+- name: Enable cockpit
+  service:
+    name: cockpit.socket
+    state: started
+    enabled: yes

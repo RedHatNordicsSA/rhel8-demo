@@ -1,2 +1,13 @@
 ---
 # tasks file for stratis
+- name: Install stratisd and stratis-cli
+  yum:
+    name: stratisd, stratis-cli
+    state: present
+
+- name: Enable stratisd
+  service:
+    name: stratisd
+    state: started
+    enabled: yes
+

@@ -12,7 +12,7 @@
   - include_role:
       name: firewalld
   - include_role:
-      name: session_recording
+      name: session-recording
   - include_role:
       name: stratis
   - include_role:
